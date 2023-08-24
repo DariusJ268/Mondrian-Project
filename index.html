@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    
+    body{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      display: grid;
+      height: 748px;
+      width: 748px;
+      background-color: #000;
+      grid-template-columns: 320px 198px 153px 50px;
+      grid-template-rows: 414px 130px 155px 22px;
+      gap: 9px;
+    }
+
+    .inside{
+      background-color: #F0F1EC;
+    }
+
+    .red{
+      background-color: #E72F24;
+    }
+
+    .wBig{
+      grid-column: span 3;
+    }
+
+    .wSmall{
+      grid-row: span 2;
+    }
+
+    .wNormal{
+      grid-area: 2 / 2 / 4 / 4;
+    }
+
+    .blue{
+      background-color: #004592;
+      grid-column: 4;
+    }
+
+    .wRight{
+      grid-row: span 2;
+    }
+
+    .yellow{
+      background-color: #F9D01E;
+    }
+
+    .black{
+      background-color: #232629;
+    }
+
+
+  </style>
+</head>
+
+<body>
+   <div class="container">
+    <div class="inside red"></div>
+    <div class="inside wBig"></div>
+    <div class="inside wSmall"></div>
+    <div class="inside wNormal"></div>
+    <div class="inside blue"></div>
+    <div class="inside wRight"></div>
+    <div class="inside"></div>
+    <div class="inside yellow"></div>
+    <div class="inside black"></div>
+   </div>
+</body>
+
+</html>
